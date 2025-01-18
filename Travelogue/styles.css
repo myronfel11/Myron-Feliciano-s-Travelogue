@@ -1,0 +1,87 @@
+/* 
+[] A font stack that includes at least one embedded Google Font, with the Google font used to style content on the page. 
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*
+   [x] Clicking on one of these links should smoothly scroll the page to the appropriate section of text and image(s) discussing that particular location. This smooth scrolling effect should not require JavaScript.
+   */
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: whitesmoke;
+  margin-bottom: 2%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  margin-left: 70px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-right: 70px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: darkslategray;
+  transition: color 0.3s ease;
+}
+
+img {
+  height: 650px;
+  width: 650px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 3% 10%;
+  gap: 20px;
+}
+
+section:nth-child(even) p {
+  height: 500px;
+  width: 500px;
+  flex-direction: row;
+  background-color: grey;
+  color: black;
+  padding: 20px;
+  border-radius: 45px;
+}
+
+#location2 {
+  flex-direction: row-reverse;
+}
+
+footer {
+  height: 400px;
+  font-size: 20px;
+  background-color: gray;
+}
