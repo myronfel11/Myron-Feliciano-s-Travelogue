@@ -94,9 +94,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   font-size: 20px;
   padding: 3% 10%;
   gap: 20px;
+}
+
+#location1,
+#location3 {
+  background-color: darkslategray;
+  border-radius: 45px;
 }
 
 #location1 p,
